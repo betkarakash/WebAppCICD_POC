@@ -19,7 +19,7 @@ pipeline{
         stage("Deploy"){
             steps{
                 //bat "del C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\*.war"
-                bat bat 'copy "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\Pipeline_POC\\TestWebApp\\target\\TestWebApp.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\"'
+                bat 'copy "C:\\Windows\\System32\\config\\systemprofile\\AppData\\Local\\Jenkins\\.jenkins\\workspace\\Pipeline_POC\\TestWebApp\\target\\TestWebApp.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 9.0\\webapps\\"'
             }
         }
     }
