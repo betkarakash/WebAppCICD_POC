@@ -8,7 +8,7 @@ pipeline{
         }
         stage("Build"){
             steps{
-                bat "mvn -f TestWebApp/pom.xml clean install"
+                bat "mvn -f TestWebApp/pom.xml clean package"
             }
         }
         stage("Archive"){
