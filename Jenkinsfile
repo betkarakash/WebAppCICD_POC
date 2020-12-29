@@ -11,5 +11,10 @@ pipeline{
                 bat "mvn -f TestWebApp/pom.xml clean install"
             }
         }
+        stage("Archive"){
+            steps{
+                archiveArtifacts artifacts: 'target/*.war', followSymlinks: false
+            }
+        }
     }
 }
